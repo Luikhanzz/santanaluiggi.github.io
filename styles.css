@@ -49,6 +49,7 @@ nav a.active {
 
 .hero {
   background: #31d46b;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
   padding: 40px 0;
 }
@@ -141,5 +142,6 @@ h1, h2, h3, h4, h5, h6 {
 p, span, a, li {
   font-family: "Dancing Script", cursive;
 }
+
 
 
