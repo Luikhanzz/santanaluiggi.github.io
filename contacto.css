@@ -44,7 +44,8 @@ nav a.active {
 /* HERO */
 .hero {
   background: #31d46b;
-  padding: 40px;
+  padding: 40px; 
+  font-family: 'Dancing Script', cursive;
   text-align: center;
 }
 
@@ -118,4 +119,14 @@ nav a.active {
   background: #222;
   color: white;
   text-align: center;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Made canvas"!
+  font-weight: 700;
+}
+
+/* Párrafos manuscritos */
+p, span, a, li {
+  font-family: "Dancing Script", cursive;
+}
+  
 }
