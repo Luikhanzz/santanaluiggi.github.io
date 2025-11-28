@@ -1,0 +1,155 @@
+/* BASE */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f1f1f1;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #004734;
+  padding: 12px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span {
+  color: #f7d300;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #f7d300;
+}
+
+/* HERO */
+.hero {
+  background: #31d46b;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #d62828;
+  font-size: 55px;
+}
+
+.hero p {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+/* GALERÍA */
+.gallery-section {
+  padding: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: zoom-in;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ZOOM FULLSCREEN */
+.zoom-box {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  backdrop-filter: blur(5px);
+  animation: fade .2s ease;
+}
+
+.zoom-img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 12px;
+  animation: zoom .25s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoom {
+  from { transform: scale(0.6); }
+  to { transform: scale(1); }
+}
+.galeria_pdf {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.galeria_pdf h2 {
+  color: #d62828; /* rojo */
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.pdf-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* formato 16:9 */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+  margin-bottom: 18px;
+}
+
+.pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.link-canva {
+  font-weight: bold;
+  color: #0e7a0d; /* verde oscuro */
+  text-decoration: none;
+}
+
+.link-canva:hover {
+  text-decoration: underline;
+  color: #1fa91c;
+}
