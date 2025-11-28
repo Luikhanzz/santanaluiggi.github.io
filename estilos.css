@@ -1,4 +1,4 @@
-/* --------------------
+e/* --------------------
    BASE
 -------------------- */
 body {
@@ -57,6 +57,7 @@ nav a.active {
   background: #31d46b;
   padding: 40px;
   text-align: center;
+   font-family: 'Dancing Script', cursive;
 }
 
 .hero h2 {
@@ -147,5 +148,15 @@ p {
 
 .img-media:hover {
   transform: scale(1.05);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Made canvas"!
+  font-weight: 700;
+}
+
+/* Párrafos manuscritos */
+p, span, a, li {
+  font-family: "Dancing Script", cursive;
 }
 
